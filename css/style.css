@@ -1,0 +1,136 @@
+
+
+body {
+    background-color: yellow;
+}
+
+.box{
+    text-align: center;
+    border: 2px solid;
+    width: 180px;
+    background-color: whitesmoke;
+   
+}
+
+.Title1 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title1 h2 {
+
+    text-align: center;
+}
+
+.Title2 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title2 h2 {
+
+    text-align: center;
+}
+
+.Title3 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title3 h2{
+
+    text-align: center;
+}
+
+.Title4 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title4 h2 {
+
+    text-align: center;
+}
+
+.Title5 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title5 h2{
+
+    text-align: center;
+}
+
+.Title6 {
+    display: grid;
+    border: 2px solid;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.Title6 h2 {
+
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+main section{
+    margin: 30px;
+}
+
+header h1{
+    border: 1px solid;
+    width: 180px;
+    background-color: white;
+   
+}
+header{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-bottom: 40px
+    padding-top: 50px;
+}
+
+.blue {
+    
+    color: blue;
+   
+}
+
+
+
+
+@media (max-width: 760) {
+    header, article .Title1, article .Title2, article .Title3, article .Title4 , article .Title5, article #Title6, article .box, article .blue{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+
+}
+
+
+
