@@ -10,8 +10,10 @@ body {
 .box {
     text-align: center;
     border: 2px solid;
-    width: 180px;
+    width: calc(33.33% - 20px); /* Set width to 1/3 of the container width */
     background-color: whitesmoke;
+    margin: 0 10px; /* Add margin between boxes */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 .Title1,
@@ -37,11 +39,10 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for responsiveness */
     justify-content: space-between;
     gap: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 0 20px; /* Add padding to main */
 }
 
 main section {
@@ -64,6 +65,12 @@ header {
 
 .blue {
     color: blue;
+}
+
+@media (max-width: 1440px) {
+    .box {
+        width: calc(50% - 20px); /* Set width to 50% of the container width for screens < 1440px */
+    }
 }
 
 @media (max-width: 760px) {
